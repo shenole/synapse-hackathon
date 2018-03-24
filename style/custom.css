@@ -19,6 +19,12 @@ html, body {
   padding: 0;
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
 /* FONTS */
 
 h1 {
@@ -36,10 +42,19 @@ h2, h3, h4, h5, h6 {
   font-family: 'Permanent Marker', cursive;
 }
 
-#about {
+h3#about {
   color: #f3efe3;
   font-size: 1.3em;
   text-shadow: 0 2px 1px rgba(0, 0, 0, .6);
+}
+
+h1#alert {
+  color: #f3efe3;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+  text-decoration: underline;
 }
 
 p {
@@ -57,12 +72,19 @@ p {
   width: 100%;
   height: 55px;
   background-color: #1090c8;
+  position: fixed;
+  z-index: 1;
+}
+
+#spacer-strip {
+  width: 100%;
+  height: 55px;
 }
 
 #help-div {
   position: absolute;
   top: 0;
-  left: 40%;
+  left: 34%;
   width: 100px;
   height: 136px;
   background-image: url(../images/ribbon.png);
@@ -73,12 +95,15 @@ p {
   font-family: 'Permanent Marker', cursive;
   font-weight: 400;
   color: #f2f2f2;
+  z-index: 2;
 }
 
 #strip-two {
   width: 100%;
-  height: 55px;
+
   background-color: #9966ff;
+  text-align: center;
+  padding: 15px 0;
 }
 
 .padded {
@@ -104,6 +129,30 @@ img#banner-one {
   height: 419px;
 }
 
+#curved-arrow {
+  width: 120px;
+  float: right;
+}
+
 iframe {
   width: 100%;
+}
+
+
+/*
+==============================
+MEDIA QUERIES
+==============================
+*/
+
+@media screen and (max-width: 850px) {
+  .mobi-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
+  .vid {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
