@@ -38,8 +38,15 @@ h2, h3, h4, h5, h6 {
   margin: 0 0 .7em;
 }
 
-#help-text {
+h4#help-text {
   font-family: 'Permanent Marker', cursive;
+}
+
+h1.welcome {
+  text-align: right;
+  font-size: 2em;
+  color: #225575;
+  margin-right: 30px;
 }
 
 h3#about {
@@ -55,6 +62,7 @@ h1#alert {
   font-size: 20px;
   line-height: normal;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 p {
@@ -126,6 +134,90 @@ ul.nav-one li a {
   color: #f3efe3;
 }
 
+.welcome-right {
+  padding-right: 0;
+}
+
+form.search {
+  float: right;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+input.query {
+  line-height: 1;
+  margin: 0;
+  padding: 8px;
+  width: 220px;
+  height: 39px;
+  border-radius: 8px 0 0 8px;
+  border: 2px solid #dad5c6;
+  background: #f3efe3;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #7b878d;
+  font-family: 'Arvo', serif;
+  float: left;
+}
+
+button#search-btn {
+  background: #1090c8;
+  padding: 7px 7px 8px 7px;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+  color: #ffffff;
+}
+
+button#search-btn:hover {
+  cursor: pointer;
+}
+
+ul.nav-two {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  float: right;
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+ul.nav-two li {
+  display: inline-block;
+  padding: 1px 15px;
+}
+
+ul.nav-two li:hover {
+  background-color: #1090c8;
+}
+
+ul.nav-two li a {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 50px;
+  border-radius: 8px 8px 0 0;
+  font-family: 'Arvo', serif;
+}
+
+ul.nav-two li a:hover {
+  color: #f3efe3;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, .6);
+}
+
+ul.nav-two li.donate {
+  background-color: #ee752c;
+  border-radius: 8px 8px 0 0;
+}
+
+ul.nav-two li.donate:hover {
+  background-color: #b34700;
+}
+
+ul.nav-two li.donate a {
+  color: #fff;
+}
+
 #strip-two {
   width: 100%;
 
@@ -155,6 +247,10 @@ img#banner-one {
   background-position: center;
   background-size: cover;
   height: 419px;
+}
+
+.mobi-padding {
+  padding-right: 32px;
 }
 
 #curved-arrow {
