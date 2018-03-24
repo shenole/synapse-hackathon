@@ -241,6 +241,67 @@ img#banner-one {
   margin: 0;
 }
 
+#easter-promo {
+  position: absolute;
+  top: 24%;
+  left:49%;
+  transform: translateX(-49px);
+  color: #176099;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, .6);
+}
+
+
+span#easter-text {
+  font-size: 30px;
+}
+
+button.easter-button {
+  padding: 12px 28px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #29a329;
+  color: #f3efe3;
+  margin-top: 20px;
+}
+
+button.easter-button:hover {
+  cursor: pointer;
+  background-color: #ee752c;
+}
+
+span.prefix {
+  color: #f3efe3;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, .8);
+  margin-right: 6px;
+}
+
+input#num {
+  line-height: 1;
+  margin: 0;
+  padding: 8px;
+  border: 2px solid #dad5c6;
+  background: #f3efe3;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #7b878d;
+  font-family: 'Arvo',serif;
+}
+
+button.send-money {
+  background-color: #7b878d;
+  margin-left: 10px;
+  font-family: 'Arvo',serif;
+  color: #f3efe3;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 4px;
+}
+
+button.send-money:hover {
+  background-color: #ee752c;
+  cursor: pointer;
+}
+
 #blue-section {
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
