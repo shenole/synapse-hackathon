@@ -67,13 +67,37 @@ p {
   text-shadow: 0 2px 1px rgba(0, 0, 0, .6);
 }
 
-
-#strip-one {
-  width: 100%;
-  height: 55px;
-  background-color: #1090c8;
+.fixed-to-top {
   position: fixed;
   z-index: 1;
+  width: 99.25%;
+}
+
+.blue-spacer {
+  background-color: #1090c8;
+}
+
+.strip-one {
+  padding: 15px 0;
+  background-color: #1090c8;
+}
+
+ul.nav-one {
+  text-align: right;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ul.nav-one li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+ul.nav-one li a {
+  text-decoration: none;
+  color: #f3efe3;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, .6);
 }
 
 #spacer-strip {
@@ -84,7 +108,7 @@ p {
 #help-div {
   position: absolute;
   top: 0;
-  left: 34%;
+  left: 18%;
   width: 100px;
   height: 136px;
   background-image: url(../images/ribbon.png);
@@ -96,6 +120,10 @@ p {
   font-weight: 400;
   color: #f2f2f2;
   z-index: 2;
+}
+
+.off-white {
+  color: #f3efe3;
 }
 
 #strip-two {
@@ -145,14 +173,25 @@ MEDIA QUERIES
 ==============================
 */
 
+@media screen and (max-width: 1366px) {
+  .fixed-to-top {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .mobi-padding {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 0;
   }
+
   .vid {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  ul.nav-one {
+    padding-right: 10px;
   }
 }
