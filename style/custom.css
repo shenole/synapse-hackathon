@@ -103,3 +103,7 @@ img#banner-one {
   background-size: cover;
   height: 419px;
 }
+
+iframe {
+  width: 100%;
+}
