@@ -94,6 +94,10 @@ p {
   display: none;
 }
 
+#burger-nav-div {
+  display: none;
+}
+
 ul.nav-one {
   text-align: right;
   list-style-type: none;
@@ -418,6 +422,23 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 850px) {
+  #burger-nav-div {
+    display: block;
+    width: 49px;
+    position: relative;
+    top: 0;
+    left: 92%;
+
+  }
+
+  span.mobi-nav {
+    display: block;
+    width: 35px;
+    padding: 3px;
+    margin: 7px;
+    background-color: #f5f5f5;
+  }
+
   #logo-blue {
     width: 87px;
   }
@@ -509,6 +530,14 @@ MEDIA QUERIES
 
   #logo-white {
     display: block;
+  }
+
+  #burger-nav-div {
+    display: block;
+    width: 49px;
+    position: absolute;
+    top: 12px;
+    left: 85%;
   }
 
   #logo-blue {
