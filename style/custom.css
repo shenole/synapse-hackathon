@@ -139,6 +139,13 @@ ul.nav-one li a {
   z-index: 2;
 }
 
+#mobi-nav-menu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  transition: right .4s ease-in-out;
+}
+
 .off-white {
   color: #f3efe3;
 }
@@ -407,10 +414,6 @@ MEDIA QUERIES
     font-size: 1.8rem;
   }
 
-  ul.nav-one {
-    display: none;
-  }
-
   #easter-promo {
     top: 2%;
     left:57%;
@@ -431,13 +434,16 @@ MEDIA QUERIES
     height: 74px;
   }
 
+  ul.nav-one {
+    display: none;
+  }
+
   #burger-nav-div {
     display: block;
     width: 49px;
     position: relative;
     top: 0;
     left: 92%;
-
   }
 
   span.mobi-nav {
@@ -460,6 +466,51 @@ MEDIA QUERIES
 
   #logo-padding {
     padding: 12px 10px;
+  }
+
+  #mobi-nav-menu {
+    position: fixed;
+    z-index: 20;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+
+  ul#mobi-nav-menu-ul {
+    list-style-type: none;
+    margin-top: 70px;
+    padding: 0;
+  }
+
+  li.mnm-li {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  li.mnm-li#donate-nav {
+    background-color: #ee752c;
+  }
+
+    li.mnm-li.li-blue {
+      background-color: #1090c8;
+    }
+
+  li.mnm-li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+
+  a.a-tag-white {
+    color: #f2f2f2;
+  }
+
+  #mobi-nav-icon {
+    position: absolute;
+    top: 12px;
+    right: 18px;
   }
 
   .welcome-right {
@@ -551,6 +602,7 @@ MEDIA QUERIES
     position: absolute;
     top: 12px;
     left: 85%;
+    z-index: 10;
   }
 
   #logo-blue {
