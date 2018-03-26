@@ -79,6 +79,7 @@ p {
   position: fixed;
   z-index: 1;
   width: 99.25%;
+  height: 50px;
 }
 
 .blue-spacer {
@@ -422,6 +423,14 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 850px) {
+  .strip-one {
+    height: 74px;
+  }
+
+  #spacer-strip {
+    height: 74px;
+  }
+
   #burger-nav-div {
     display: block;
     width: 49px;
@@ -503,6 +512,10 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 420px) {
+  .strip-one {
+    height: 83px;
+  }
+
   #logo-white {
     width: 60px;
     margin-left: 10px;
