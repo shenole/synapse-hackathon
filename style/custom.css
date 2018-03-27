@@ -354,7 +354,7 @@ iframe {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #f3efe3;
+  background-color: #f2f2f2;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -362,9 +362,11 @@ iframe {
 }
 
 #map {
-	width: 800px;
+	width: 50%;
 	height: 25.25em;
   margin: auto;
+  box-shadow: 6px 5px 16px #a6a6a6;
+  border-radius: 8px;
 }
 
 #close-icon {
