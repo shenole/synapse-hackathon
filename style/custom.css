@@ -361,6 +361,12 @@ iframe {
   display: none;
 }
 
+#map {
+	width: 800px;
+	height: 25.25em;
+  margin: auto;
+}
+
 #close-icon {
   position: absolute;
   top: 16px;
