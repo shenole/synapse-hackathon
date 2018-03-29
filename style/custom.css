@@ -44,6 +44,7 @@ h2, h3, h4, h5, h6 {
 
 h4#help-text {
   font-family: 'Permanent Marker', cursive;
+  font-size: 1.2rem;
 }
 
 h1.welcome {
@@ -51,6 +52,12 @@ h1.welcome {
   font-size: 2em;
   color: #225575;
   margin-right: 30px;
+}
+
+h1.i-need {
+  margin-top: 60px;
+  margin-bottom: 35px;
+  color: #225575;
 }
 
 h3#about {
@@ -77,6 +84,15 @@ p {
   text-align: left;
   color: #f3efe3;
   text-shadow: 0 2px 1px rgba(0, 0, 0, .6);
+}
+
+p.ac-text {
+  color: #222222;
+  text-shadow: none;
+}
+
+address {
+  margin-bottom: 0;
 }
 
 .fixed-to-top {
@@ -384,8 +400,13 @@ iframe {
   right: 60px;
   width: 300px;
   height: 420px;
-  background-color: red;
+  background-color: #f2f2f2;
+  border: 1px solid #a6a6a6;
+  border-radius: 8px 8px 0 0;
   z-index: 30;
+  padding: 14px;
+  box-sizing: border-box;
+  transition: bottom 1s ease-in-out .2s;
 }
 
 #chatbot-div.rise {
@@ -400,6 +421,58 @@ iframe {
 
 #close-icon:hover {
   cursor: pointer;
+}
+
+
+/*
+==============================
+I NEED HELP PAGE
+==============================
+*/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion a{
+    text-decoration: none;
+}
+
+#address-left {
+  width: 50%;
+  float: left;
+}
+
+#address-right {
+  width: 50%;
+  float: left;
+}
+
+#loc-info::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 
@@ -557,6 +630,10 @@ MEDIA QUERIES
     padding-right: 10px;
   }
 
+  ul.nav-two {
+    display: none;
+  }
+
   #banner-one {
     display: none;
   }
@@ -594,6 +671,20 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 420px) {
+
+  #mobi-nav-menu {
+    height: 100%;
+    background-color: #f2f2f2;
+  }
+
+  #last-li{
+    border-bottom: 1px solid rgb(217, 217, 217);
+  }
+
+  h1.i-need {
+    margin-top: 36px;
+  }
+
   .strip-one {
     height: 83px;
   }
@@ -616,6 +707,7 @@ MEDIA QUERIES
     margin: 0;
     padding: 5px 0 0 0;
     height: 83px;
+    width: 110px;
   }
 
   h4#help-text {
@@ -656,6 +748,21 @@ MEDIA QUERIES
   h1.welcome {
     margin-right: 0;
     text-align: center;
+  }
+
+  #chatbot-div {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #address-left {
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  #address-right {
+    width: 100%;
+    margin-top: 40px;
   }
 
 }

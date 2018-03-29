@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style/custom.css">
 </head>
-<body>
+<body">
   <div class="container-fluid">
 <!-- header -->
     <div class="row fixed-to-top">
@@ -20,7 +20,7 @@
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-6 strip-one">
         <a href="index.html.html"><img src="images/logo-white.png" class="img-fluid" id="logo-white"></a>
-        <a href="i-need-help.html"><div id="help-div">
+        <a href="#"><div id="help-div">
           <h4 style="text-align: center;" id="help-text">I Need Help!</h4>
         </div></a>
 <!-- navigation -->
@@ -49,7 +49,7 @@
             <li class="mnm-li"><a href="#">Blog</a></li>
             <li class="mnm-li"><a href="#">Services</a></li>
             <li class="mnm-li"><a href="#">Volunteer</a></li>
-            <li class="mnm-li"><a href="#">Ways to Give</a></li>
+            <li class="mnm-li" id="last-li"><a href="#">Ways to Give</a></li>
           </ul>
         </div>
 <!-- END navigtion -->
@@ -147,7 +147,14 @@
       </div>
     </div>
 
-
+  </div>
+<!-- CHATBOT -->
+  <div id="chatbot-div">
+    <div id="close-chatbot" style="float: right;">
+      <!--<i class="fas fa-times-circle fa-2x" id="exit-bot"></i>-->
+    </div>
+    <div id="insert-bot">
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
