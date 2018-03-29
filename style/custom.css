@@ -25,6 +25,10 @@ html, body {
   width: 100%;
 }
 
+.row#help-page {
+  background-image: url(../images/bg.jpg);
+}
+
 /* FONTS */
 
 h1 {
@@ -359,6 +363,11 @@ iframe {
   height: 100%;
   z-index: 10;
   display: none;
+}
+
+#plate {
+  overflow-y: auto;
+  height: 80%;
 }
 
 #map {

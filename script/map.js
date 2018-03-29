@@ -1,16 +1,3 @@
-/*
-//Starting map with no markers present
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    mapTypeId: 'roadmap',
-    center: {lat: 27.964157, lng: -82.452606},
-    zoom: 12
-  });
-}
-*/
-
-
-//Function that detects primary device's location and markers created for 3 recorder positions
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: 'roadmap',
@@ -32,6 +19,17 @@ function initMap() {
     infoWindow.open(map);
     map.setCenter(pos);
   },
+
+
+/*
+  var micOneLatlng = ;
+    var marker = new google.maps.Marker({
+    position: micOneLatlng,
+    map: map
+  });
+*/
+
+
 
     //If there is a location error
     function() {
