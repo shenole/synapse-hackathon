@@ -27,9 +27,10 @@ helpBtn.addEventListener('click', function() {
   helpModal.style.display = ('block')
 });
 
+function activeBot() {
+  document.querySelector('#chatbot-div').addClassList = ('rise');
+}
+
 ////////////////////////////
 // I NEED HELP OVERLAY
 ////////////////////////////
-xOut.addEventListener('click', function() {
-  helpModal.style.display = ('none');
-});

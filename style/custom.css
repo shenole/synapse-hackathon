@@ -378,6 +378,20 @@ iframe {
   border-radius: 8px;
 }
 
+#chatbot-div {
+  position: fixed;
+  bottom: -420px;
+  right: 60px;
+  width: 300px;
+  height: 420px;
+  background-color: red;
+  z-index: 30;
+}
+
+#chatbot-div.rise {
+  bottom: 0;
+}
+
 #close-icon {
   position: absolute;
   top: 16px;
