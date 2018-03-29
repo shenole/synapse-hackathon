@@ -47,6 +47,11 @@ h4#help-text {
   font-size: 1.2rem;
 }
 
+h4#help-text-two {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.2rem;
+}
+
 h1.welcome {
   text-align: right;
   font-size: 2em;
@@ -143,6 +148,23 @@ ul.nav-one li a {
 }
 
 #help-div {
+  position: absolute;
+  top: 0;
+  left: 18%;
+  width: 100px;
+  height: 136px;
+  background-image: url(../images/ribbon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0 0 13px;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  color: #f2f2f2;
+  z-index: 2;
+}
+
+#help-div-two {
   position: absolute;
   top: 0;
   left: 18%;
@@ -423,6 +445,19 @@ iframe {
   cursor: pointer;
 }
 
+#insert-bot {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background-image: url(../images/converse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 /*
 ==============================
@@ -699,6 +734,18 @@ MEDIA QUERIES
   }
 
   #help-div {
+    background-color: red;
+    background-image: url("");
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 5px 0 0 0;
+    height: 83px;
+    width: 110px;
+  }
+
+  #help-div-two {
     background-color: red;
     background-image: url("");
     top: 0;

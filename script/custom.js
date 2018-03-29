@@ -2,7 +2,7 @@
 // GLOBAL VARIABLES
 ////////////////////////////
 let helpBtn = document.querySelector('#help-div');
-let helpModal = document.querySelector('#overlay');
+let helpBtnTwo = document.querySelector('#help-div-two');
 let xOut = document.querySelector('#exit-bot');
 let burgNav = document.querySelector('#burger-nav-div');
 let burgMenu = document.querySelector('#mobi-nav-menu');
@@ -31,5 +31,11 @@ helpBtn.addEventListener('click', function activeBot() {
 });
 
 ////////////////////////////
-// I NEED HELP OVERLAY
+// I NEED HELP BUTTON TWO
 ////////////////////////////
+helpBtnTwo.addEventListener('click', function activeBotTwo() {
+  document.querySelector('#chatbot-div').classList.toggle('rise');
+  if(document.querySelector('#chatbot-div').classList == 'rise') {
+    document.querySelector('#help-text-two').textContent = 'Close Chatbot';
+  } else (document.querySelector('#help-text-two').textContent = 'I Need Help')
+});
